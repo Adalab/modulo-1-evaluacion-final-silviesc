@@ -1,0 +1,53 @@
+.second {
+  margin: 34px 12px 39px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media (min-width: 768px) {
+    margin: 37px 41px 45px 37px;
+  }
+  @media (min-width: 768px) {
+    margin: 58px 136px 73px 275px;
+  }
+  &__p--1 {
+    color: $orange;
+    font-size: $xs;
+    font-family: $text;
+    @media (min-width: 768px) {
+      font-size: $s;
+    }
+  }
+  &__h2 {
+    font-family: $title;
+    font-size: $xl;
+    color: $black;
+    @media (min-width: 768px) {
+      font-size: $mediumTablet;
+    }
+  }
+  &__p--2 {
+    font-family: $text;
+    font-size: $m;
+    color: $dark_gray;
+    line-height: 1.67;
+    @media (min-width: 768px) {
+      font-size: $l;
+    }
+  }
+  &__button {
+    border: 2px solid $orange;
+    border-radius: 22.5px;
+    width: 160px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    text-align: center;
+    & a {
+      text-decoration: none;
+      font-family: $text;
+      font-size: $l;
+      color: $orange;
+    }
+  }
+}
