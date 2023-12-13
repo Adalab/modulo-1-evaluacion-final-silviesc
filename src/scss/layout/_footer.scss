@@ -6,6 +6,10 @@
   background-color: $dark_gray;
   padding: 10px 109px 36px 108px;
   gap: 30px;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
