@@ -2,71 +2,57 @@
   height: 100vh;
   background-image: url(../images/cover.jpeg);
   background-size: cover;
-  transform: scale(1.3);
-  background-position-x: 38%;
-  background-position-y: 40px;
-  &__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    padding: 38px;
+  background-position: center;
+  background-position-x: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 38px;
+  @media (min-width: 768px) {
+    background-position-x: 25%;
+  }
+  & h1 {
+    font-family: $title;
+    font-size: $xxl;
+    color: $white;
+    text-transform: uppercase;
+    padding-left: 5px;
+    line-height: 1.67;
     @media (min-width: 768px) {
-      background-position-x: 25%;
+      font-size: $bigTablet;
+      line-height: 1.33;
     }
-    & h1 {
-      font-family: $title;
-      font-size: $xxl;
-      font-weight: bold;
-      color: $white;
-      text-transform: uppercase;
-      padding-left: 5px;
-      line-height: 1.67;
-      @media (min-width: 768px) {
-        line-height: 1.33;
-        font-size: $bigTablet;
-      }
-      @media (min-width: 1024px) {
-        font-size: $bigDesktop;
-        line-height: 1.32;
-      }
+    @media (min-width: 1024px) {
+      font-size: $bigTablet;
+      width: 954.8px;
     }
-    & p {
-      font-family: $text;
-      font-size: $s;
-      color: $white;
-      padding: 10px 16px;
-      @media (min-width: 768px) {
-        font-size: $xl;
-        width: 28ch;
-        line-height: 1.17;
-      }
-      @media (min-width: 1024px) {
-        width: 40ch;
-      }
+  }
+  & p {
+    font-family: $text;
+    font-size: $s;
+    color: $white;
+    padding: 10px 16px;
+    @media (min-width: 768px) {
+      font-size: $xl;
+      width: 28ch;
+      line-height: 1.17;
     }
-    & figure {
-      width: 38px;
-      height: 36px;
-      background-color: $white;
-      border-radius: 50%;
+  }
+  & figure {
+    width: 38px;
+    height: 36px;
+    background-color: $white;
+    border-radius: 50%;
+    @media (min-width: 768px) {
+      width: 42.5px;
+      height: 45px;
+    }
+    & img {
+      transform: translateY(11px);
       @media (min-width: 768px) {
-        width: 42.5px;
-        height: 45px;
-      }
-      @media (min-width: 1024px) {
-        width: 46.2px;
-        height: 45.9px;
-      }
-      & img {
-        transform: translateY(11px);
-        @media (min-width: 768px) {
-          transform: translateY(15px);
-        }
-        @media (min-width: 1024px) {
-          transform: translateY(18px);
-        }
+        transform: translateY(15px);
       }
     }
   }

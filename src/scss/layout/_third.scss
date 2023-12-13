@@ -1,34 +1,33 @@
 .third {
   display: grid;
   justify-items: center;
-  padding: 0 15px 0 15px;
+  padding: 29px 15px 49px 15px;
   text-align: center;
   gap: 41px;
   background-color: $light_gray;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     column-gap: 30px;
     row-gap: 38px;
+    padding: 49px 30px 69px 49px;
   }
   @media (min-width: 1024px) {
-    padding: 48px 81.2px 63px 91px;
+    padding: 48px 81.2px 69px 91px;
   }
   &__h2 {
     font-family: $title;
     font-size: $l;
     line-height: 1.5;
     width: 20ch;
-    padding-top: 29px;
     @media (min-width: 768px) {
       grid-column: 1/4;
       font-size: $smallTablet;
-      width: 40ch;
-      height: 45px;
-      padding-top: 49px;
+      width: 450px;
     }
     @media (min-width: 1024px) {
       font-size: $mediumTablet;
+      width: 730px;
     }
   }
   &__article {
@@ -61,7 +60,6 @@
     border-radius: 22.5px;
     width: 184px;
     height: 45px;
-    margin-bottom: 49px;
     background-color: $orange;
     line-height: 50px;
     & a {
