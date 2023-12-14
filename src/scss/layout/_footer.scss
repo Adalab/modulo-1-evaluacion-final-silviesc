@@ -49,6 +49,7 @@
       text-decoration: none;
       color: $white;
       font-family: $text;
+      font-weight: 400;
       font-size: $s;
     }
   }
@@ -56,6 +57,7 @@
     list-style: none;
     color: $white;
     font-family: $text;
+    font-weight: 400;
     font-size: $xs;
     line-height: 1.88;
     @media (min-width: 768px) {

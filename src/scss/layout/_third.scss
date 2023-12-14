@@ -47,6 +47,7 @@
     }
     &--p {
       font-family: $text;
+      font-weight: 400;
       color: $black;
       font-size: $m;
       @media (min-width: 768px) {
@@ -70,6 +71,7 @@
     & a {
       text-decoration: none;
       font-family: $text;
+      font-weight: 500;
       font-size: $l;
       color: $white;
       &:hover {

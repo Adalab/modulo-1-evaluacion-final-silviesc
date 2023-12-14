@@ -26,12 +26,13 @@
       line-height: 1.33;
     }
     @media (min-width: 1024px) {
-      font-size: $bigTablet;
+      font-size: $bigDesktop;
       width: 954.8px;
     }
   }
   & p {
     font-family: $text;
+    font-weight: 400;
     font-size: $s;
     color: $white;
     padding: 10px 16px;

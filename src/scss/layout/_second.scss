@@ -13,6 +13,7 @@
     color: $orange;
     font-size: $xs;
     font-family: $text;
+    font-weight: 400;
     @media (min-width: 768px) {
       font-size: $s;
     }
@@ -27,6 +28,7 @@
   }
   &__p--2 {
     font-family: $text;
+    font-weight: 400;
     font-size: $m;
     color: $dark_gray;
     line-height: 1.67;
@@ -51,6 +53,7 @@
     & a {
       text-decoration: none;
       font-family: $text;
+      font-weight: 500;
       font-size: $l;
       color: $orange;
       &:hover {
